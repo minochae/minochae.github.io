@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CC Shorts Uploader</title>
+<meta name="description" content="공개 라이선스 우주·과학 영상에 한국어 해설을 입혀 본인 채널에 올리는 개인용 업로드 도구">
+<link rel="icon" href="logo.png">
+<style>
+:root {
+  --bg: #f7f7fb;
+  --surface: #ffffff;
+  --text: #1c1d2b;
+  --muted: #5b5e73;
+  --line: #e3e4ee;
+  --accent: #3a3aa8;
+  --accent-soft: #ececfb;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #12132a;
+    --surface: #1b1c3a;
+    --text: #ecebf7;
+    --muted: #a9aac6;
+    --line: #2d2e55;
+    --accent: #ffcf6b;
+    --accent-soft: #2a2b52;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 16px/1.7 -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", "Segoe UI", sans-serif;
+}
+.wrap { max-width: 760px; margin: 0 auto; padding: 32px 16px 64px; }
+header { display: flex; align-items: center; gap: 14px; margin-bottom: 8px; }
+header img { width: 52px; height: 52px; border-radius: 12px; }
+header .name { font-weight: 700; font-size: 20px; }
+header .name a { color: inherit; text-decoration: none; }
+nav { display: flex; flex-wrap: wrap; gap: 6px 16px; margin: 8px 0 28px; font-size: 15px; }
+nav a { color: var(--accent); text-decoration: none; }
+nav a[aria-current] { font-weight: 700; text-decoration: underline; }
+h1 { font-size: 26px; line-height: 1.35; margin: 0 0 6px; }
+h2 { font-size: 19px; margin: 32px 0 8px; }
+.updated { color: var(--muted); font-size: 14px; margin: 0 0 24px; }
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 18px 20px; margin: 16px 0; }
+.lang { display: inline-block; font-size: 12px; font-weight: 700; letter-spacing: .04em; color: var(--muted); border: 1px solid var(--line); border-radius: 6px; padding: 1px 7px; margin-bottom: 6px; }
+a { color: var(--accent); overflow-wrap: anywhere; }
+ul { padding-left: 22px; }
+li { margin: 4px 0; }
+hr { border: 0; border-top: 1px solid var(--line); margin: 40px 0; }
+footer { color: var(--muted); font-size: 14px; margin-top: 48px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <img src="logo.png" alt="">
+    <div class="name"><a href="./">CC Shorts Uploader</a></div>
+  </header>
+  <nav>
+    <a href="./" aria-current="page">소개 · About</a>
+    <a href="privacy.html">개인정보처리방침 · Privacy Policy</a>
+    <a href="terms.html">서비스 약관 · Terms of Service</a>
+  </nav>
+
+  <h1>CC Shorts Uploader</h1>
+  <p class="updated">개인용 업로드 도구 · Personal upload tool</p>
+
+  <div class="card">
+    <span class="lang">한국어</span>
+    <p>CC Shorts Uploader는 운영자 한 사람이 자기 YouTube 채널에 영상을 올리기 위해 만든 개인용 도구입니다.
+      일반 사용자를 위한 서비스가 아니며, 가입이나 로그인 기능이 없습니다.</p>
+    <p>하는 일:</p>
+    <ul>
+      <li>ESA/Hubble·ESA/Webb 등 원 기관이 크리에이티브 커먼즈 저작자표시(CC BY 4.0)로 공개한 우주·과학 영상을 원 기관 사이트에서 받아,</li>
+      <li>세로 화면으로 재구성하고 한국어 해설·자막을 더한 짧은 영상(쇼츠)을 운영자의 컴퓨터에서 만든 뒤,</li>
+      <li>YouTube Data API(<code>videos.insert</code>)로 운영자 본인의 채널에 올립니다.</li>
+    </ul>
+    <p>모든 영상은 출처를 밝힙니다. 영상 화면 안에 출처를 계속 표시하고, 마지막 화면과 설명란에 원본 제목·링크·저작자 표시·라이선스·변경 사항을 적습니다.
+      원본 음악은 라이선스 대상이 아니므로 사용하지 않습니다.</p>
+  </div>
+
+  <div class="card">
+    <span class="lang">English</span>
+    <p>CC Shorts Uploader is a personal tool built by a single operator to upload videos to the operator's own YouTube channel.
+      It is not offered to the public and has no sign-up or user accounts.</p>
+    <p>What it does:</p>
+    <ul>
+      <li>Downloads space and science footage that the originating institutions (e.g. ESA/Hubble, ESA/Webb) publish under Creative Commons Attribution 4.0, directly from their websites;</li>
+      <li>Produces short vertical videos with Korean narration and captions on the operator's own computer;</li>
+      <li>Uploads them to the operator's own channel via the YouTube Data API (<code>videos.insert</code>).</li>
+    </ul>
+    <p>Every video credits its sources: an on-screen credit throughout, a full credit card at the end, and the original title, link, credit line, license and a list of changes in the description.
+      Original soundtracks are not used, as they are not covered by the CC BY license.</p>
+  </div>
+
+  <h2>문의 · Contact</h2>
+  <p><a href="mailto:minochae@gmail.com">minochae@gmail.com</a></p>
+
+  <footer>
+    이 도구는 YouTube API 서비스를 사용합니다. This tool uses YouTube API Services.
+    · <a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms of Service</a>
+  </footer>
+</div>
+</body>
+</html>

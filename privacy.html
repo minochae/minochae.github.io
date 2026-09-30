@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>개인정보처리방침 · CC Shorts Uploader</title>
+<link rel="icon" href="logo.png">
+<style>
+:root {
+  --bg: #f7f7fb;
+  --surface: #ffffff;
+  --text: #1c1d2b;
+  --muted: #5b5e73;
+  --line: #e3e4ee;
+  --accent: #3a3aa8;
+  --accent-soft: #ececfb;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #12132a;
+    --surface: #1b1c3a;
+    --text: #ecebf7;
+    --muted: #a9aac6;
+    --line: #2d2e55;
+    --accent: #ffcf6b;
+    --accent-soft: #2a2b52;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 16px/1.7 -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", "Segoe UI", sans-serif;
+}
+.wrap { max-width: 760px; margin: 0 auto; padding: 32px 16px 64px; }
+header { display: flex; align-items: center; gap: 14px; margin-bottom: 8px; }
+header img { width: 52px; height: 52px; border-radius: 12px; }
+header .name { font-weight: 700; font-size: 20px; }
+header .name a { color: inherit; text-decoration: none; }
+nav { display: flex; flex-wrap: wrap; gap: 6px 16px; margin: 8px 0 28px; font-size: 15px; }
+nav a { color: var(--accent); text-decoration: none; }
+nav a[aria-current] { font-weight: 700; text-decoration: underline; }
+h1 { font-size: 26px; line-height: 1.35; margin: 0 0 6px; }
+h2 { font-size: 19px; margin: 32px 0 8px; }
+.updated { color: var(--muted); font-size: 14px; margin: 0 0 24px; }
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 18px 20px; margin: 16px 0; }
+.lang { display: inline-block; font-size: 12px; font-weight: 700; letter-spacing: .04em; color: var(--muted); border: 1px solid var(--line); border-radius: 6px; padding: 1px 7px; margin-bottom: 6px; }
+a { color: var(--accent); overflow-wrap: anywhere; }
+ul { padding-left: 22px; }
+li { margin: 4px 0; }
+hr { border: 0; border-top: 1px solid var(--line); margin: 40px 0; }
+footer { color: var(--muted); font-size: 14px; margin-top: 48px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <img src="logo.png" alt="">
+    <div class="name"><a href="./">CC Shorts Uploader</a></div>
+  </header>
+  <nav>
+    <a href="./">소개 · About</a>
+    <a href="privacy.html" aria-current="page">개인정보처리방침 · Privacy Policy</a>
+    <a href="terms.html">서비스 약관 · Terms of Service</a>
+  </nav>
+
+  <h1>개인정보처리방침</h1>
+  <p class="updated">시행일 2026년 9월 30일</p>
+
+  <h2>1. YouTube API 서비스 사용</h2>
+  <p>CC Shorts Uploader(이하 “이 도구”)는 YouTube API 서비스를 사용합니다. 이 도구를 사용하면
+    <a href="https://www.youtube.com/t/terms">YouTube 서비스 약관</a>과
+    <a href="https://policies.google.com/privacy">Google 개인정보처리방침</a>이 함께 적용됩니다.</p>
+
+  <h2>2. 사용 대상</h2>
+  <p>이 도구는 운영자 한 사람이 자신의 YouTube 채널에 영상을 올리는 데에만 씁니다. 다른 사람의 계정이나 채널에는 접근하지 않습니다.</p>
+
+  <h2>3. 접근·수집·저장하는 정보</h2>
+  <ul>
+    <li><strong>요청 권한:</strong> <code>https://www.googleapis.com/auth/youtube.upload</code> 하나만 요청합니다. 영상을 올리는 권한이며, 채널의 다른 정보를 읽는 데 쓰지 않습니다.</li>
+    <li><strong>인증 토큰:</strong> Google 로그인 후 받은 OAuth 토큰은 운영자 컴퓨터의 로컬 파일에만 저장하며, 운영자만 읽을 수 있게 권한을 제한합니다. 서버나 제3자에게 보내지 않습니다.</li>
+    <li><strong>업로드 기록:</strong> 올린 영상의 ID·주소·올린 시각을 운영자 컴퓨터에 기록해 같은 영상을 두 번 올리지 않게 합니다.</li>
+    <li>이름, 연락처, 시청 기록, 구독자 정보 등 그 밖의 개인정보는 수집하지 않습니다. 쿠키나 분석 도구를 쓰지 않습니다.</li>
+  </ul>
+
+  <h2>4. 이용 목적</h2>
+  <p>위 정보는 운영자가 만든 영상을 운영자 채널에 올리는 목적에만 씁니다.</p>
+
+  <h2>5. 제3자 제공</h2>
+  <p>어떤 정보도 판매하거나 제3자에게 제공하지 않습니다. 영상과 제목·설명은 업로드를 위해 YouTube(Google)로만 전송됩니다.</p>
+
+  <h2>6. 보관 기간과 삭제</h2>
+  <p>토큰은 권한을 철회하거나 운영자가 파일을 지울 때까지 보관합니다. 권한을 철회하면 토큰은 더 이상 쓸 수 없고, 운영자 컴퓨터의 토큰 파일도 삭제합니다.
+    삭제를 요청하려면 아래 문의 주소로 연락하세요. 7일 안에 처리합니다.</p>
+
+  <h2>7. 권한 철회</h2>
+  <p>언제든지 <a href="https://security.google.com/settings/security/permissions">Google 계정의 보안 설정(타사 앱 액세스)</a>에서 이 도구의 권한을 철회할 수 있습니다.</p>
+
+  <h2>8. 문의</h2>
+  <p><a href="mailto:minochae@gmail.com">minochae@gmail.com</a></p>
+
+  <h2>9. 변경</h2>
+  <p>이 방침이 바뀌면 이 페이지에 고지하고 시행일을 고칩니다.</p>
+
+  <hr>
+
+  <h1 lang="en">Privacy Policy</h1>
+  <p class="updated" lang="en">Effective September 30, 2026</p>
+  <div lang="en">
+    <h2>1. Use of YouTube API Services</h2>
+    <p>CC Shorts Uploader (“the tool”) uses YouTube API Services. By using the tool you are also subject to the
+      <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a> and the
+      <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
+
+    <h2>2. Who uses it</h2>
+    <p>The tool is used only by its single operator to upload videos to the operator's own YouTube channel. It does not access any other account or channel.</p>
+
+    <h2>3. Information accessed, collected and stored</h2>
+    <ul>
+      <li><strong>Scope:</strong> only <code>https://www.googleapis.com/auth/youtube.upload</code> is requested, used solely to upload videos.</li>
+      <li><strong>Auth token:</strong> the OAuth token obtained after Google sign-in is stored only in a local file on the operator's computer, readable only by the operator. It is never sent to any server or third party.</li>
+      <li><strong>Upload log:</strong> the ID, URL and time of each uploaded video are recorded locally to avoid duplicate uploads.</li>
+      <li>No other personal data (name, contacts, watch history, subscribers, etc.) is collected. No cookies or analytics are used.</li>
+    </ul>
+
+    <h2>4. Purpose</h2>
+    <p>This information is used only to upload the operator's own videos to the operator's own channel.</p>
+
+    <h2>5. Sharing</h2>
+    <p>No information is sold or shared with third parties. Videos and their titles and descriptions are sent only to YouTube (Google) for uploading.</p>
+
+    <h2>6. Retention and deletion</h2>
+    <p>The token is kept until access is revoked or the operator deletes the file. When access is revoked, the local token file is deleted.
+      To request deletion, contact the address below; requests are handled within 7 days.</p>
+
+    <h2>7. Revoking access</h2>
+    <p>You can revoke the tool's access at any time from the
+      <a href="https://security.google.com/settings/security/permissions">Google security settings page</a>.</p>
+
+    <h2>8. Contact</h2>
+    <p><a href="mailto:minochae@gmail.com">minochae@gmail.com</a></p>
+
+    <h2>9. Changes</h2>
+    <p>Any changes to this policy will be posted on this page with an updated effective date.</p>
+  </div>
+
+  <footer><a href="./">CC Shorts Uploader</a> · <a href="terms.html">Terms of Service</a></footer>
+</div>
+</body>
+</html>
